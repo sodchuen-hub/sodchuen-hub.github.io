@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watcharaphon Phengthet — Internal Tools Developer</title>
+<meta name="description" content="Internal Tools Developer & AI Integration Engineer. Web applications, chatbots, and AI automation for daily company operations.">
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#161b22; --card:#1c2129; --line:#2d333d;
+    --text:#e6e8eb; --muted:#9aa4b2; --accent:#4cc38a; --accent2:#58a6ff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Thai",sans-serif;line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{padding:88px 0 64px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(76,195,138,.12),transparent)}
+  .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px}
+  h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin-bottom:8px}
+  .role{font-size:clamp(1.05rem,2.5vw,1.35rem);color:var(--muted);margin-bottom:22px}
+  .role b{color:var(--text);font-weight:600}
+  .intro{max-width:640px;color:var(--muted);margin-bottom:28px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:10px 20px;border-radius:8px;font-weight:600;font-size:.95rem}
+  .btn-primary{background:var(--accent);color:#08130d}
+  .btn-primary:hover{filter:brightness(1.1);text-decoration:none}
+  .btn-ghost{border:1px solid var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--muted);text-decoration:none}
+
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.6rem;margin-bottom:6px}
+  .sub{color:var(--muted);margin-bottom:36px;max-width:680px}
+
+  .note{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:14px 18px;color:var(--muted);font-size:.92rem;margin-bottom:36px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .shot{aspect-ratio:16/9;background:linear-gradient(135deg,#1b2733,#15211b);display:flex;align-items:center;justify-content:center;color:#5b6672;font-size:.85rem;overflow:hidden}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+  .card-body{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+  .card h3{font-size:1.1rem}
+  .field{font-size:.92rem;color:var(--muted)}
+  .field b{color:var(--text);font-weight:600;display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:2px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+  .chip{font-size:.78rem;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--bg2)}
+
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .skill-group{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .skill-group h3{font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:12px}
+
+  .about p{color:var(--muted);max-width:680px;margin-bottom:14px}
+  .about p b{color:var(--text)}
+
+  footer{padding:48px 0 64px;text-align:left}
+  .contact-line{display:flex;gap:20px;flex-wrap:wrap;color:var(--muted);margin-top:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <h1>Watcharaphon Phengthet</h1>
+    <p class="role"><b>Internal Tools Developer</b> · AI Integration Engineer</p>
+    <p class="intro">I turn internal workflow problems into working software — web applications, chatbots, and AI-powered automation used in daily company operations. I own the full cycle: gathering requirements from real users, building the tool, and keeping it running.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="#projects">View my work</a>
+      <a class="btn btn-ghost" href="mailto:watcharaphon.pt@gmail.com">Contact me</a>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Case Studies</h2>
+    <p class="sub">Systems I designed, built, and maintain as the in-house developer at my current company.</p>
+    <div class="note">🔒 These are internal company systems — source code and business data are private. Screenshots are shared with permission, with sensitive information removed.</div>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="shot"><img src="images/nas-search.png" alt="NAS Product Data Search screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>NAS Product Data Search</h3>
+          <p class="field"><b>Problem</b>Product data lived in folders on the company NAS — finding anything meant browsing files by hand.</p>
+          <p class="field"><b>What I built</b>A web application that indexes and searches product data directly from the NAS, so teams find what they need in seconds instead of digging through folders.</p>
+          <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">JavaScript</span><span class="chip">NAS</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="shot"><img src="images/hr-backoffice.png" alt="HR Back-Office System screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>HR Back-Office System</h3>
+          <p class="field"><b>Problem</b>HR handled employee records and daily operations through scattered documents and manual steps.</p>
+          <p class="field"><b>What I built</b>A back-office web system that centralizes employee records and day-to-day HR work, built around requirements gathered directly from the HR team.</p>
+          <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="shot"><img src="images/company-website.png" alt="Company website and job application system screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>Company Website + Job Application System</h3>
+          <p class="field"><b>Problem</b>The company had no structured way to receive and track job applications online.</p>
+          <p class="field"><b>What I built</b>The company website with an integrated job application system, feeding applicant submissions directly into HR's workflow.</p>
+          <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="shot"><img src="images/it-ticketing.png" alt="IT Support Ticketing screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>IT Support Ticketing</h3>
+          <p class="field"><b>Problem</b>IT issues arrived through chat messages and walk-ups, with no record of what was reported or resolved.</p>
+          <p class="field"><b>What I built</b>An internal website where employees report IT issues and track their status — every request now lives in one system.</p>
+          <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="shot"><img src="images/line-chatbot.png" alt="LINE Chatbot for HR screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>LINE Chatbot for HR</h3>
+          <p class="field"><b>Problem</b>HR answered the same employee questions over and over, in a chat app everyone already used.</p>
+          <p class="field"><b>What I built</b>A LINE chatbot that automates responses to common employee inquiries, meeting employees where they already are.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">LINE Messaging API</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="shot"><img src="images/ai-chatbot.png" alt="Internal AI Chatbot screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>Internal AI Chatbot</h3>
+          <p class="field"><b>Problem</b>Internal questions needed flexible answers that rule-based bots can't handle.</p>
+          <p class="field"><b>What I built</b>An AI assistant for internal Q&amp;A powered by LLM APIs, integrated into the company's workflow.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">OpenAI API</span><span class="chip">Claude API</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="shot"><img src="images/reels-automation.png" alt="AI Reels Automation screenshot" onerror="this.parentElement.textContent='Screenshot coming soon'"></div>
+        <div class="card-body">
+          <h3>AI Reels Automation</h3>
+          <p class="field"><b>Problem</b>Preparing short video clips for social media meant repeating the same editing steps for every clip.</p>
+          <p class="field"><b>What I built</b>An AI-assisted tool that prepares edited Reels clips for CapCut, cutting the repetitive steps out of the content team's editing workflow.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">AI APIs</span><span class="chip">CapCut</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">The tools I use in production, in my daily work.</p>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>AI &amp; Automation</h3>
+        <div class="chips"><span class="chip">OpenAI API</span><span class="chip">Claude API</span><span class="chip">LINE Messaging API</span><span class="chip">n8n / Make</span><span class="chip">AI-assisted development</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Development</h3>
+        <div class="chips"><span class="chip">PHP</span><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">HTML/CSS</span><span class="chip">SQL / MySQL</span><span class="chip">WordPress</span><span class="chip">Git / GitHub</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Infrastructure</h3>
+        <div class="chips"><span class="chip">Network administration</span><span class="chip">Firewalls / VLANs</span><span class="chip">NAS</span><span class="chip">Backup &amp; DR</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>UX / UI</h3>
+        <div class="chips"><span class="chip">Figma</span><span class="chip">Wireframing</span><span class="chip">Usability testing</span><span class="chip">Responsive design</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p style="margin-top:24px">I'm the person teams come to when a manual process needs to become a system. At <b>Sodchuen2528</b>, I work as an AI Integration Engineer &amp; IT — building and maintaining the company's internal tools while also running its network infrastructure, so I understand both the software and the environment it runs in.</p>
+    <p>Before that, I worked on web and UX/UI design projects, which is why the tools I build don't just work — they're designed around how people actually use them. I hold a <b>B.Eng. in Computer Engineering</b> from Pibulsongkram Rajabhat University (2020–2024).</p>
+    <p>Outside of work: Startup Thailand League (2022–2023), Cyber Hackathon 2023, and other startup programs.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <div class="contact-line">
+      <span>📫 <a href="mailto:watcharaphon.pt@gmail.com">watcharaphon.pt@gmail.com</a></span>
+      <span>📍 Phitsanulok, Thailand</span>
+      <span>🐙 <a href="https://github.com/sodchuen-hub">github.com/sodchuen-hub</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
